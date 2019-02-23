@@ -18,7 +18,7 @@ let done = {};
 
 
 client.on("message", message => {
- if (message.content === prefix + "help-mc") {
+ if (message.content === prefix + "help") {
   const embed = new Discord.RichEmbed() 
       .setColor("#ffff00")
       .setThumbnail(message.author.avatarURL)
