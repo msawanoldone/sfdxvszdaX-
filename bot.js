@@ -613,7 +613,7 @@ const cuttweet = [     'كت تويت ‏| تخيّل لو أنك سترسم ش�
 
 
 client.on('message', function(message) {
-	const myID = "526210504822358056";
+	const myID = "521525136692740106";
     let args = message.content.split(" ").slice(1).join(" ");
     if(message.content.startsWith(adminprefix + "setname")) {
 		        if(message.author.id !== myID) return;
@@ -675,7 +675,7 @@ client.on('message', function(message) {
 
   client.on('message',async message => {
     if(message.content.startsWith(adminprefix + "restart")) {
-        if(message.author.id !== "526210504822358056") return message.reply('You aren\'t the bot owner.');
+        if(message.author.id !== "521525136692740106") return message.reply('You aren\'t the bot owner.');
         message.channel.send('**Restarting.**').then(msg => {
             setTimeout(() => {
                msg.edit('**Restarting..**');
